@@ -79,6 +79,12 @@ export const constantRoutes = [
         name: 'Tree',
         component: () => import('@/views/select-tree/index'),
         meta: { title: '下拉树', icon: 'tree' }
+      },
+      {
+        path: 'edit-table',
+        name: 'edittable',
+        component: () => import('@/views/edittable/index'),
+        meta: { title: '编辑表格', icon: 'table' }
       }
     ]
   },

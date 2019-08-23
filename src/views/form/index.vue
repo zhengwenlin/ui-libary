@@ -5,18 +5,18 @@
         <el-input v-model="form.name" />
       </el-form-item>
       <el-form-item label="下拉框">
-        <el-select v-model="form.region" placeholder="please select your zone">
+        <el-select v-model="form.region" placeholder="请选择">
           <el-option label="Zone one" value="shanghai" />
           <el-option label="Zone two" value="beijing" />
         </el-select>
       </el-form-item>
       <el-form-item label="时间选择">
         <el-col :span="11">
-          <el-date-picker v-model="form.date1" type="date" placeholder="Pick a date" style="width: 100%;" />
+          <el-date-picker v-model="form.date1" type="date" placeholder="请选择日期" style="width: 100%;" />
         </el-col>
         <el-col :span="2" class="line">-</el-col>
         <el-col :span="11">
-          <el-time-picker v-model="form.date2" type="fixed-time" placeholder="Pick a time" style="width: 100%;" />
+          <el-time-picker v-model="form.date2" type="fixed-time" placeholder="请选择时间" style="width: 100%;" />
         </el-col>
       </el-form-item>
       <el-form-item label="开关">
@@ -24,16 +24,16 @@
       </el-form-item>
       <el-form-item label="复选框">
         <el-checkbox-group v-model="form.type">
-          <el-checkbox label="Online activities" name="type" />
-          <el-checkbox label="Promotion activities" name="type" />
-          <el-checkbox label="Offline activities" name="type" />
-          <el-checkbox label="Simple brand exposure" name="type" />
+          <el-checkbox label="选项一" name="type" />
+          <el-checkbox label="选项二" name="type" />
+          <el-checkbox label="选项三" name="type" />
+          <el-checkbox label="选项四" name="type" />
         </el-checkbox-group>
       </el-form-item>
       <el-form-item label="单选框">
         <el-radio-group v-model="form.resource">
-          <el-radio label="Sponsor" />
-          <el-radio label="Venue" />
+          <el-radio label="A" />
+          <el-radio label="B" />
         </el-radio-group>
       </el-form-item>
       <el-form-item label="文本域">
